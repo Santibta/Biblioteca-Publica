@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Pública</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="logo">
+            <span class="icono">📚</span>
+            <div>
+                <h1>Biblioteca Pública</h1>
+                <p>Sistema de gestión bibliotecaria</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="informacion">
+            <h2>Bienvenido a la Biblioteca Pública</h2>
+
+            <p>
+                Consulta nuestro catálogo, gestiona los usuarios
+                y administra los préstamos de manera sencilla.
+            </p>
+
+            <div class="caracteristicas">
+                <div class="caracteristica">
+                    <span>📖</span>
+                    <div>
+                        <h3>Catálogo</h3>
+                        <p>Consulta los libros disponibles.</p>
+                    </div>
+                </div>
+
+                <div class="caracteristica">
+                    <span>👥</span>
+                    <div>
+                        <h3>Usuarios</h3>
+                        <p>Administra los usuarios registrados.</p>
+                    </div>
+                </div>
+
+                <div class="caracteristica">
+                    <span>📋</span>
+                    <div>
+                        <h3>Préstamos</h3>
+                        <p>Controla los préstamos de libros.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="login">
+            <div class="login-contenido">
+
+                <h2>Iniciar sesión</h2>
+                <p class="subtitulo">
+                    Ingresa tus credenciales para continuar
+                </p>
+
+                <form id="formularioLogin">
+
+                    <div class="campo">
+                        <label for="usuario">Usuario</label>
+                        <input
+                            type="text"
+                            id="usuario"
+                            placeholder="Ingresa tu usuario"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="contrasena">Contraseña</label>
+                        <input
+                            type="password"
+                            id="contrasena"
+                            placeholder="Ingresa tu contraseña"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit">
+                        Ingresar
+                    </button>
+
+                    <p id="mensaje"></p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Biblioteca Pública &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
