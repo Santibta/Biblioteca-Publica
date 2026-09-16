@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Biblioteca Pública</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="pagina-dashboard">
+
+    <!-- Encabezado -->
+    <header class="encabezado-dashboard">
+
+        <div class="logo">
+            <span class="icono">📚</span>
+
+            <div>
+                <h1>Biblioteca Pública</h1>
+                <p>Sistema de gestión bibliotecaria</p>
+            </div>
+        </div>
+
+        <div class="usuario-actual">
+            <span>👤</span>
+            <div>
+                <strong>Administrador</strong>
+                <small>Usuario activo</small>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="estructura-dashboard">
+
+        <!-- Menú lateral -->
+        <aside class="menu-lateral">
+
+            <div class="titulo-menu">
+                <span>MENÚ PRINCIPAL</span>
+            </div>
+
+            <nav>
+
+                <a href="dashboard.html" class="opcion-menu activa">
+                    <span>🏠</span>
+                    <span>Inicio</span>
+                </a>
+
+                <a href="#" class="opcion-menu">
+                    <span>📖</span>
+                    <span>Catálogo</span>
+                </a>
+
+                <a href="#" class="opcion-menu">
+                    <span>👥</span>
+                    <span>Usuarios</span>
+                </a>
+
+                <a href="#" class="opcion-menu">
+                    <span>📋</span>
+                    <span>Préstamos</span>
+                </a>
+
+            </nav>
+
+            <div class="separador-menu"></div>
+
+            <a href="index.html" class="opcion-menu cerrar">
+                <span>🚪</span>
+                <span>Cerrar sesión</span>
+            </a>
+
+        </aside>
+
+
+        <!-- Contenido principal -->
+        <main class="contenido-dashboard">
+
+            <div class="encabezado-contenido">
+
+                <div>
+                    <h2>Bienvenido al sistema</h2>
+                    <p>
+                        Administra la información de la Biblioteca Pública
+                        desde este panel.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Tarjetas estadísticas -->
+            <section class="estadisticas">
+
+                <div class="tarjeta-estadistica">
+
+                    <div class="icono-estadistica">
+                        📚
+                    </div>
+
+                    <div>
+                        <p>Total de libros</p>
+                        <h3>120</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="tarjeta-estadistica">
+
+                    <div class="icono-estadistica">
+                        👥
+                    </div>
+
+                    <div>
+                        <p>Usuarios registrados</p>
+                        <h3>45</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="tarjeta-estadistica">
+
+                    <div class="icono-estadistica">
+                        📋
+                    </div>
+
+                    <div>
+                        <p>Préstamos activos</p>
+                        <h3>18</h3>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Accesos rápidos -->
+            <section class="seccion-dashboard">
+
+                <h3>Accesos rápidos</h3>
+
+                <div class="accesos-rapidos">
+
+                    <a href="#" class="acceso">
+
+                        <span class="acceso-icono">📖</span>
+
+                        <div>
+                            <strong>Catálogo de libros</strong>
+                            <p>Consultar los libros disponibles</p>
+                        </div>
+
+                    </a>
+
+
+                    <a href="#" class="acceso">
+
+                        <span class="acceso-icono">👥</span>
+
+                        <div>
+                            <strong>Usuarios</strong>
+                            <p>Consultar usuarios registrados</p>
+                        </div>
+
+                    </a>
+
+
+                    <a href="#" class="acceso">
+
+                        <span class="acceso-icono">📋</span>
+
+                        <div>
+                            <strong>Préstamos</strong>
+                            <p>Consultar préstamos activos</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- Actividad reciente -->
+            <section class="seccion-dashboard">
+
+                <div class="titulo-seccion">
+
+                    <div>
+                        <h3>Actividad reciente</h3>
+                        <p>Últimos movimientos registrados</p>
+                    </div>
+
+                </div>
+
+
+                <div class="tabla-contenedor">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Usuario</th>
+                                <th>Libro</th>
+                                <th>Fecha</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Juan Pérez</td>
+                                <td>Cien años de soledad</td>
+                                <td>15/09/2026</td>
+                                <td>
+                                    <span class="estado activo">
+                                        Activo
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Laura Gómez</td>
+                                <td>El principito</td>
+                                <td>14/09/2026</td>
+                                <td>
+                                    <span class="estado devuelto">
+                                        Devuelto
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Carlos Rodríguez</td>
+                                <td>Don Quijote de la Mancha</td>
+                                <td>13/09/2026</td>
+                                <td>
+                                    <span class="estado activo">
+                                        Activo
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- Pie de página -->
+    <footer class="footer-dashboard">
+        <p>Biblioteca Pública &copy; 2026</p>
+    </footer>
+
+</body>
+
+</html>
